@@ -206,7 +206,7 @@ var Fireworks = function(){
 		this.targetRadius = 1;
 	};
 	
-	Firework.update = function(index){
+	Firework.prototype.update = function(index){
 		self.ctx.lineWidth = this.lineWidth;
 			
 		vx = Math.cos(this.angle) * this.speed,
