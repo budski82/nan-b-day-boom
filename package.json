@@ -8,7 +8,7 @@
     "start": "concurrently npm:watch:*",
     "watch:sync": "browser-sync start --server --no-notify --files \"html/*.html\", \"js/*.js\", \"css/*.css\", \"public/**/*/*.*\"",
     "watch:sass": "sass --watch src/scss/main.scss:public/css/main.css",
-    "watch:mon": "nodemon ./src/index.js",
+    ":mon": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
