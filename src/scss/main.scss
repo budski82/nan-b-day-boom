@@ -2,21 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ralway&family=Lobster&display=swap');
 
-// Utility Classes 
-.grid{ display:grid; place-content:center; }
-
-
-
 
 // SCSS variable definitions ^-*-*-^ Custom Properties Equivalents 
-$w:1px; $h:1px; $mn-h:$h*100vh; 
+$w:1vw; $h:1; $mn-h:$h*100vh; 
 
 :root{
   --w: #[$w];
-  --mn-h: #{$mn-h};
+  --mn-h: #[$mn-h];
 }
+
+// Utility Classes 
+.grid{ display:grid; place-content:center; }
+
+.flex{ display:flex; justify-content:center; align-items:center; min-height: $mn-h;}
+
 
 *{margin:0; padding:0; box-sizing:border-box;}
 
-body
+body, .flex
 { background:#079; font:700 1.4rem 'Lobster',cursive;}
