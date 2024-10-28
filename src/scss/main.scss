@@ -1,0 +1,24 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ralway&family=Lobster&display=swap');
+
+// Utility Classes 
+.grid{ display:grid; place-content:center; }
+
+
+
+
+// SCSS variable definitions ^-*-*-^ Custom Properties Equivalents 
+$w:1px; $h:1px; $mn-h:$h*100vh; 
+
+:root{
+  --w: #[$w];
+  --mn-h: #{$mn-h}
+}
+
+*{margin:0; padding:0; box-sizing:border-box;}
+
+body
+{
+  background:#079;
+}
