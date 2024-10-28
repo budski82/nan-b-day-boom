@@ -13,7 +13,7 @@ $w:1px; $h:1px; $mn-h:$h*100vh;
 
 :root{
   --w: #[$w];
-  --mn-h: #{$mn-h}
+  --mn-h: #{$mn-h};
 }
 
 *{margin:0; padding:0; box-sizing:border-box;}
