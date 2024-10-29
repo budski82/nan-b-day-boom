@@ -209,8 +209,8 @@ var Fireworks = function(){
 	Firework.prototype.update = function(index){
 		self.ctx.lineWidth = this.lineWidth;
 			
-		vx = Math.cos(this.angle) * this.speed,
-		vy = Math.sin(this.angle) * this.speed;
+		var vx = Math.cos(this.angle) * this.speed;
+		var vy = Math.sin(this.angle) * this.speed;
 		this.speed *= 1 + this.acceleration;				
 		this.coordLast[2].x = this.coordLast[1].x;
 		this.coordLast[2].y = this.coordLast[1].y;
