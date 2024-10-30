@@ -38,7 +38,7 @@ var Fireworks = function(){
 			return false;
 		};
 		
-		self.canvas.width = self.cw = 1000;
+		self.canvas.width = self.cw = 999.98;
 		self.canvas.height = self.ch = 800;	
 		
 		self.particles = [];	
