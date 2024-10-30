@@ -22,7 +22,7 @@ var Fireworks = function(){
 	/*=============================================================================*/
 	var self = this;
 	var rand = function(rMi, rMa){return ~~((Math.random()*(rMa-rMi+1))+rMi);}
-	window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(a){window.setTimeout(a,1E3/60)}}();
+	window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(a){window.setTimeout(a,1E6/60)}}();
 	
 	/*=============================================================================*/	
 	/* Initialize
@@ -38,8 +38,8 @@ var Fireworks = function(){
 			return false;
 		};
 		
-		self.canvas.width = self.cw = 600;
-		self.canvas.height = self.ch = 400;	
+		self.canvas.width = self.cw = 1000;
+		self.canvas.height = self.ch = 800;	
 		
 		self.particles = [];	
 		self.partCount = 30;
